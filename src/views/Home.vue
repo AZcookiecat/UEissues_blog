@@ -19,10 +19,17 @@ const timelineData = ref([
     date: '2025-12-12',
     title: '解决HUTB Python客户端依赖安装问题',
     category: '客户端安装',
-    description: '解决安装PythonAPI示例脚本依赖时遇到的invertedai依赖冲突问题，通过创建临时temp_requirements.txt文件成功跳过冲突依赖',
+    description: '解决安装PythonAPI示例脚本依赖时遇到的invertedai依赖冲突问题，通过创建临时requirements.txt文件成功跳过冲突依赖',
     articleId: 2
   },
-  
+  {
+    id: 3,
+    date: '2025-12-14',
+    title: '必要软件安装指南',
+    category: '软件安装',
+    description: '详细介绍7zip、Cmake和Make等必要软件的下载安装方法及相关教程链接',
+    articleId: 3
+  }
 ])
 
 onMounted(() => {

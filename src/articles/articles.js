@@ -82,7 +82,23 @@ Pillow</code></pre>
         <li>成功安装了 hutb==2.9.16</li>
       </ul>
       
+      <p>安装完成后，HUTB包成功安装到D:\Anaconda3\Lib\site-packages目录，版本为2.9.16。安装信息如下：</p>
+      
+      <div style="background-color: #2d2d2d; color: #f8f8f2; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: 'Courier New', Courier, monospace;">
+        <p style="margin: 0 0 10px 0;">hub包已成功安装。版本2.9.16已安装到D:\Anaconda3\Lib\site-packages目录。</p>
+        <p style="margin: 0 0 10px 0; font-weight: bold;">安装信息：</p>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li style="margin: 5px 0;">包名: hutb</li>
+          <li style="margin: 5px 0;">版本: 2.9.16</li>
+          <li style="margin: 5px 0;">位置: D:\Anaconda3\Lib\site-packages</li>
+          <li style="margin: 5px 0;">摘要: Python API for communicating with the CARLA server.</li>
+        </ul>
+        <p style="margin: 15px 0 0 0;">安装过程中出现了一些依赖冲突警告，这是因为msgpack-rpc-python需要较旧版本的tornado(4.5.3)和numpy(2.2.6)，与系统中已安装的其他包产生了冲突。但hutb包本身已成功安装，可以正常使用。</p>
+      </div>
+      
       <h4>3. 安装Python客户端示例脚本依赖</h4>
+      <p>安装过程如下：</p>
+      <img src="/imgs/1.png" alt="安装Python客户端示例脚本依赖" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
       <ul>
         <li>由于 invertedai 依赖的 lanelet2<2.0.0,>=1.2.2 在当前环境无法找到，创建了临时 requirements.txt 跳过该依赖</li>
         <li>成功安装了其他必要依赖：future、numpy<2.0.0、networkx、Shapely、pygame、matplotlib、open3d、Pillow</li>
@@ -90,6 +106,28 @@ Pillow</code></pre>
       
       <h3>最终结果</h3>
       <p>所有核心依赖已安装完成，HUTB客户端库可以正常使用。示例脚本的大部分依赖也已安装，仅缺少 invertedai 相关功能。</p>
+    `
+  },
+  {
+    id: 3,
+    title: "必要软件安装指南",
+    date: "2025-12-14",
+    category: "软件安装",
+    summary: "详细介绍7zip、Cmake和Make等必要软件的下载安装方法及相关教程链接。",
+    content: `
+      <h3>7zip</h3>
+      <p><strong>网站</strong>：<a href="https://www.7-zip.org/" target="_blank">https://www.7-zip.org/</a></p>
+      <p>7zip是一款免费开源的文件压缩解压工具，支持多种压缩格式，广泛用于软件开发和日常使用。</p>
+      
+      <h3>Cmake</h3>
+      <p><strong>网站</strong>：<a href="https://cmake.org/" target="_blank">https://cmake.org/</a></p>
+      <p><strong>教程</strong>：<a href="https://blog.csdn.net/qq_42598221/article/details/121952160?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522c4c0617ade38bcc6a5cd9760603d2785%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=c4c0617ade38bcc6a5cd9760603d2785&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-121952160-null-null.142^v102^pc_search_result_base1&utm_term=cmake%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85&spm=1018.2226.3001.4187" target="_blank">CMake下载安装教程</a></p>
+      <p>CMake是一个跨平台的构建系统生成工具，用于管理软件构建过程，支持多种编译器和操作系统。</p>
+      
+      <h3>Make</h3>
+      <p><strong>网站</strong>：<a href="https://sourceforge.net/projects/mingw/files/" target="_blank">https://sourceforge.net/projects/mingw/files/</a></p>
+      <p><strong>教程</strong>：<a href="https://blog.csdn.net/qq_36707640/article/details/149353038?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522d1833eb516552e6170b8ebe88e647708%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=d1833eb516552e6170b8ebe88e647708&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduend~default-1-149353038-null-null.nonecase&utm_term=make%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85&spm=1018.2226.3001.4450" target="_blank">Make下载安装教程</a></p>
+      <p>Make是一个构建自动化工具，用于根据Makefile中的规则编译和链接程序，是Unix/Linux系统下常用的构建工具。在Windows系统中，可以通过MinGW安装Make工具。</p>
     `
   }
 ];
