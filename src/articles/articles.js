@@ -129,6 +129,47 @@ Pillow</code></pre>
       <p><strong>教程</strong>：<a href="https://blog.csdn.net/qq_36707640/article/details/149353038?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522d1833eb516552e6170b8ebe88e647708%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=d1833eb516552e6170b8ebe88e647708&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduend~default-1-149353038-null-null.nonecase&utm_term=make%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85&spm=1018.2226.3001.4450" target="_blank">Make下载安装教程</a></p>
       <p>Make是一个构建自动化工具，用于根据Makefile中的规则编译和链接程序，是Unix/Linux系统下常用的构建工具。在Windows系统中，可以通过MinGW安装Make工具。</p>
     `
+  },
+  {
+    id: 4,
+    title: "运行Python客户端时的错误及解决过程",
+    date: "2025-12-16",
+    category: "Python客户端",
+    summary: "记录运行Python客户端时出现的错误及解决过程，包括module not found、包冲突等问题。",
+    content: `
+      <h3>问题描述</h3>
+      <p>在运行Python客户端示例脚本时，遇到了一系列错误，包括找不到carla模块、包冲突等问题。</p>
+      
+      <h4>1. 运行generate_traffic.py报错</h4>
+      <p>运行generate_traffic.py脚本时，出现"ModuleNotFoundError: No module named 'carla'"错误：</p>
+      <img src="/imgs/5.png" alt="运行generate_traffic.py报错" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h4>2. 重新安装wheel包时的冲突</h4>
+      <p>尝试重新安装carla wheel包时，出现了包冲突警告：</p>
+      <img src="/imgs/2.png" alt="重新安装wheel包冲突" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h4>3. 安装examples依赖时的报错</h4>
+      <p>再次安装examples目录下的依赖时，仍出现报错：</p>
+      <img src="/imgs/3.png" alt="安装examples依赖报错" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h3>解决过程</h3>
+      <p>针对上述问题，采取了以下解决步骤：</p>
+      
+      <h4>1. 检查Python环境</h4>
+      <p>首先检查Python环境，确认Python版本和pip版本是否兼容。</p>
+      
+      <h4>2. 重新安装carla包</h4>
+      <p>尝试重新安装carla wheel包，注意查看安装过程中的警告信息。</p>
+      
+      <h4>3. 解决依赖冲突</h4>
+      <p>针对包冲突问题，考虑使用虚拟环境或调整包版本来解决冲突。</p>
+      
+      <h4>4. 手动安装缺失依赖</h4>
+      <p>对于无法自动安装的依赖，尝试手动安装特定版本。</p>
+      
+      <h3>最终结果</h3>
+      <p>通过上述步骤，成功解决了Python客户端运行时的问题，能够正常运行generate_traffic.py等示例脚本。</p>
+    `
   }
 ];
 
