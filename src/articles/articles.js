@@ -131,44 +131,31 @@ Pillow</code></pre>
     `
   },
   {
-    id: 4,
-    title: "运行Python客户端时的错误及解决过程",
-    date: "2025-12-16",
-    category: "Python客户端",
-    summary: "记录运行Python客户端时出现的错误及解决过程，包括module not found、包冲突等问题。",
+    id: 5,
+    title: "编译UE4.sln时的报错",
+    date: "2025-12-17",
+    category: "UE4编译",
+    summary: "记录编译UE4.sln时遇到的报错及根据官方文档修改BuildConfiguration.xml文件。",
     content: `
       <h3>问题描述</h3>
-      <p>在运行Python客户端示例脚本时，遇到了一系列错误，包括找不到carla模块、包冲突等问题。</p>
+      <p>在按照 <a href="https://openhutb.github.io/doc/build_windows/" target="_blank">官方文档</a> 编译UE4.sln时，遇到了一系列错误。</p>
       
-      <h4>1. 运行generate_traffic.py报错</h4>
-      <p>运行generate_traffic.py脚本时，出现"ModuleNotFoundError: No module named 'carla'"错误：</p>
-      <img src="/imgs/5.png" alt="运行generate_traffic.py报错" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <h4>1. 编译UE4.sln时报错</h4>
+      <p>初次编译UE4.sln时，出现了如下错误：</p>
+      <img src="/imgs/屏幕截图 2025-12-17 093715.png" alt="编译UE4.sln报错" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
       
-      <h4>2. 重新安装wheel包时的冲突</h4>
-      <p>尝试重新安装carla wheel包时，出现了包冲突警告：</p>
-      <img src="/imgs/2.png" alt="重新安装wheel包冲突" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <h3>后续过程</h3>
+      <p>根据官方文档，尝试修改BuildConfiguration.xml文件来解决编译问题。</p>
       
-      <h4>3. 安装examples依赖时的报错</h4>
-      <p>再次安装examples目录下的依赖时，仍出现报错：</p>
-      <img src="/imgs/3.png" alt="安装examples依赖报错" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <h4>1. 修改BuildConfiguration.xml文件</h4>
+      <p>根据文档内容，修改BuildConfiguration.xml文件中的设置，设置进行7核编译：</p>
+      <img src="/imgs/屏幕截图 2025-12-17 094219.png" alt="修改BuildConfiguration.xml文件" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
       
-      <h3>解决过程</h3>
-      <p>针对上述问题，采取了以下解决步骤：</p>
+      <h4>2. 重新编译后的错误</h4>
+      <p>修改配置后重新编译，仍出现报错：</p>
+      <img src="/imgs/屏幕截图 2025-12-17 094330.png" alt="重新编译后报错1" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/imgs/屏幕截图 2025-12-17 130003.png" alt="重新编译后报错2" style="max-width: 100%; margin: 20px 0; border-radius: 8px;" />
       
-      <h4>1. 检查Python环境</h4>
-      <p>首先检查Python环境，确认Python版本和pip版本是否兼容。</p>
-      
-      <h4>2. 重新安装carla包</h4>
-      <p>尝试重新安装carla wheel包，注意查看安装过程中的警告信息。</p>
-      
-      <h4>3. 解决依赖冲突</h4>
-      <p>针对包冲突问题，考虑使用虚拟环境或调整包版本来解决冲突。</p>
-      
-      <h4>4. 手动安装缺失依赖</h4>
-      <p>对于无法自动安装的依赖，尝试手动安装特定版本。</p>
-      
-      <h3>最终结果</h3>
-      <p>通过上述步骤，成功解决了Python客户端运行时的问题，能够正常运行generate_traffic.py等示例脚本。</p>
     `
   }
 ];

@@ -33,10 +33,17 @@ const timelineData = ref([
   {
     id: 4,
     date: '2025-12-16',
-    title: '运行Python客户端时的错误及解决过程',
-    category: 'Python客户端',
-    description: '记录运行Python客户端时出现的错误及解决过程，包括module not found、包冲突等问题',
-    articleId: 4
+    title: '运行Python客户端时的generate_traffic.py运行无反应',
+    category: 'Carla开发',
+    description: '运行generate_traffic.py无反应，而运行manual_control.py可以正常显示Carla界面并控制车辆。',
+  },
+  {
+    id: 5,
+    date: '2025-12-17',
+    title: '编译UE4.sln时的报错及解决过程',
+    category: 'UE4编译',
+    description: '记录编译UE4.sln时遇到的报错及根据官方文档修改BuildConfiguration.xml文件的解决过程',
+    articleId: 5
   }
 ])
 
@@ -50,6 +57,15 @@ const unsolvedIssuesData = ref([
     details: '运行generate_traffic.py脚本时，没有任何输出，也没有启动Carla界面；但运行manual_control.py时，能够正常启动Carla界面并控制车辆，说明Carla本身能够正常运行。需要找出generate_traffic.py无法正常工作的原因。',
     image: '/imgs/4.png',
     tags: ['Carla', 'Python脚本', 'generate_traffic.py', 'manual_control.py']
+  },
+  {
+    id: 2,
+    title: '编译UE4.sln时报错',
+    category: 'UE4编译',
+    description: '根据OpenHUTB官方文档编译UE4.sln时出现错误，尝试修改BuildConfiguration.xml文件后仍无法解决。',
+    details: '按照官方文档编译UE4.sln时出现编译错误，尝试修改BuildConfiguration.xml文件设置7核编译，但重新编译后仍出现报错。需要找出编译失败的根本原因并解决。',
+    image: '/imgs/屏幕截图 2025-12-17 093715.png',
+    tags: ['UE4', '编译错误', 'BuildConfiguration', '多核编译']
   }
 ])
 
